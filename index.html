@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 0 auto;
+            width: 600px;
+            height: 300px;
+            border: 2px solid orange;
+        }
+        .nav{
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid black;
+        }
+        .box .nav li{
+            text-align: center;
+            list-style-type: none;
+            float: left;
+            border-right: 1px solid #666;
+            border-bottom: 1px solid black;
+        }
+        .box .nav li span{
+            margin: 5px;
+        }
+        .box .nav .clear{
+            float:right;
+        }
+        .box .nav .add{
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            float: right;
+            background-color: pink;
+        }
+        section{
+            width: 120px;
+            height: 120px;
+            display: none;
+        }
+        .clearborder{
+            background-color: pink;
+        }
+        .show{
+            display: block;
+        }
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="TAB">
+        <div class="nav">
+            <ul>
+                <li class="clearborder">
+                    <span>标题一</span>
+                    <div class="clear">*</div>
+                </li>
+                <li>
+                    <span>标题二</span>
+                    <div class="clear">*</div>
+                </li>
+            </ul>
+            <div class="add">+</div>
+        </div>
+        <div class="content">
+            <section class="show">内容一</section>
+            <section>内容二</section>
+        </div>
+    </div>
+    <script src="js/tab.js"></script>
+</body>
+</html>
